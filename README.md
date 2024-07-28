@@ -6,7 +6,7 @@
 
 # 3. 使用例
 ## 3.1. info:適用状況の確認
-```shell-session
+```ShellSession
 $ flyway info -configFiles=./flyway/conf/dev.toml -locations=filesystem:./flyway/sql
 Flyway Community Edition 10.16.0 by Redgate
 
@@ -28,7 +28,7 @@ Schema version: << Empty Schema >>
 ```
 
 ## 3.2. migrate -target={version}:特定バージョンを指定してマイグレーション
-```shell-session
+```ShellSession
 $ flyway migrate -target=1.20240728.03 -configFiles=./flyway/conf/dev.toml
 Flyway Community Edition 10.16.0 by Redgate
 
@@ -59,7 +59,7 @@ postgres=# \q
 ```
 
 ## 3.3. migrate -target={version} -configFiles={file_path}:設定ファイルを指定してマイグレーション
-```shell-session
+```ShellSession
 $ flyway migrate -target=1.20240728.03 -configFiles=./flyway/conf/stg.toml
 Flyway Community Edition 10.16.0 by Redgate
 
@@ -92,7 +92,7 @@ postgres=# \q
 ```
 
 ## 3.4. migrate:最新バージョンへマイグレーション
-```shell-session
+```ShellSession
 $ flyway migrate -configFiles=./flyway/conf/prd.toml
 Flyway Community Edition 10.16.0 by Redgate
 
