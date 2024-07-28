@@ -1,0 +1,16 @@
+[flyway]
+environment = "stg"
+locations = ["filesystem:./flyway/sql"]
+
+[environments.stg]
+url = "jdbc:postgresql://almalinux8-2:5432/postgres?useUnicode=true&characterEncoding=UTF-8"
+user = "postgres"
+
+[flyway.placeholders]
+global-env = "stg"
+
+V1_20240728_01_create_schemas-schema_name = "stg"
+
+V1_20240728_03__initial_datas-default_user_name = "jiro"
+V1_20240728_03__initial_datas-add_users_for_stg = "INSERT INTO stg.users (name) VALUES ('hoge'), ('fuga');"
+V1_20240728_03__initial_datas-add_users_for_prd = ""

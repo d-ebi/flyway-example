@@ -1,0 +1,16 @@
+[flyway]
+environment = "prd"
+locations = ["filesystem:./flyway/sql"]
+
+[environments.prd]
+url = "jdbc:postgresql://almalinux8-3:5432/postgres?useUnicode=true&characterEncoding=UTF-8"
+user = "postgres"
+
+[flyway.placeholders]
+global-env = "prd"
+
+V1_20240728_01_create_schemas-schema_name = "prd"
+
+V1_20240728_03__initial_datas-default_user_name = "saburo"
+V1_20240728_03__initial_datas-add_users_for_stg = ""
+V1_20240728_03__initial_datas-add_users_for_prd = "INSERT INTO prd.users (name) VALUES ('foo'), ('bar');"

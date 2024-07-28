@@ -1,0 +1,16 @@
+[flyway]
+environment = "dev"
+locations = ["filesystem:./flyway/sql"]
+
+[environments.dev]
+url = "jdbc:postgresql://almalinux8:5432/postgres?useUnicode=true&characterEncoding=UTF-8"
+user = "postgres"
+
+[flyway.placeholders]
+global-env = "dev"
+
+V1_20240728_01_create_schemas-schema_name = "dev"
+
+V1_20240728_03__initial_datas-default_user_name = "taro"
+V1_20240728_03__initial_datas-add_users_for_stg = ""
+V1_20240728_03__initial_datas-add_users_for_prd = ""
