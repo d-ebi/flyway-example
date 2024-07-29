@@ -119,3 +119,6 @@ postgres=# SELECT * FROM prd.users;
 
 postgres=# \qs
 ```
+
+# 4. 参考リンク
+* [Flyway 4\.2の仕組み、使い方を学ぶ \#Flyway \- Qiita](https://qiita.com/rubytomato@github/items/d1746585451ff0ba917c)
