@@ -7,7 +7,7 @@ url = "jdbc:postgresql://almalinux8-2:5432/postgres?useUnicode=true&characterEnc
 user = "postgres"
 
 [flyway.placeholders]
-global-env = "stg"
+global-environment = "stg"
 
 V1_20240728_01_create_schemas-schema_name = "stg"
 
